@@ -4,9 +4,9 @@ IEEE UCF - Digital Audio Workshop 2.0 (Skills Series)
 %}
 
 % spec a bandpass filter to recover one sine component of g(t)
-g_denoised = bandpass(g_noisy,[2400, 2600],fs);
+g_denoised = bandpass(..,[2400, 2600],fs);
 
-audiowrite('g_denoised.wav',g_denoised,fs);
+audiowrite('g_denoised.wav',..,fs);
 
 figure
 plot(t,g_denoised);

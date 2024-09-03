@@ -1,3 +1,6 @@
+% misc utility script - searches directory for audio files and returns
+% their dynamic ranges
+
 clear all; clc; close all;
 wavs = dir([pwd, '/*.wav']);
 n_wav = length(wavs);
